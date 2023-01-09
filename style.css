@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Mulish:wght@400;600&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: hsl(160, 97%, 37%);
+  --title-color: hsl(208, 16%, 24%);
+  --text-color: hsl(208, 15%, 28%);
+  --body-color: #fff;
+  --body-color-alt: hsl(160, 16%, 96%);
+
+  --body-font: "Mulish", sans-serif;
+  --second-font: "jost", sans-serif;
+
+  --h1-font-size: 50px;
+  --h2-font-size: 40px;
+  --h3-font-size: 18px;
+  --normal-font-size: 15px;
+  --small-font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  background-color: var(--body-color);
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background-color: var(--body-color-alt);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav {
+  height: 81px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 44px;
+}
+
+.nav__logo-img {
+  max-width: 150px;
+}
+
+.nav__item {
+  display: inline-block;
+}
+
+.nav__btns {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.sign__in,
+.nav__close,
+.nav__toggle {
+  display: none;
+}
